@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    >
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="PhotoEditor"
+            app:titleTextColor="@color/white"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.smb.glowbutton.GlowButton
+        android:id="@+id/add_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8sp"
+        app:gb_drawableTint="@color/white"
+        app:gb_text="Add Image"
+        app:gb_textColor="@color/white"
+        app:gb_textSize="24sp"
+        app:gb_backgroundColor="#E1255A"
+        app:gb_cornerRadius="15dp"
+        app:gb_disabledTextColor="#808080"
+        app:gb_glowAnimationDuration="500"
+        app:gb_glowColor="#E1255A"
+        app:gb_rippleAnimationDuration="1500"
+        app:gb_rippleColor="@color/purple_500"
+        app:gb_rippleEnabled="true"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
